@@ -78,6 +78,20 @@
           "type": "txt"
         }
       ]
+    },
+    {
+      "id": "python-web-api-standard-library",
+      "title": "Beginner Web APIs with Python Standard Library",
+      "description": "Build a simple JSON HTTP service using Python's standard library and learn basic API concepts.",
+      "path": "assignments/python-web-api-standard-library",
+      "dueDate": "2026-06-30",
+      "attachments": [
+        {
+          "name": "Starter Code",
+          "file": "starter-code.py",
+          "type": "python"
+        }
+      ]
     }
   ]
 }
