@@ -1,39 +1,57 @@
-# Instrucciones para `assignments`
+---
+description: "Instructions to use whenever creating or editing assignment markdown files to ensure consistency and clarity for students."
+applyTo: "assignments/**/*.md"
+---
 
-Propósito
+# Assignment Markdown Structure Guidelines
 
-Este archivo explica cómo añadir y mantener las tareas en la carpeta `assignments/`.
+All assignment markdown files should follow these guidelines:
 
-Estructura requerida para cada tarea
+## 1. Template Usage
 
-- `README.md` — Descripción de la tarea, objetivos y pasos.
-- `starter-code.py` (u otro archivo de inicio) — Código base para estudiantes.
-- `data.csv` (opcional) — Datos necesarios para la práctica.
+- Assignment markdown files must follow the structure in [`templates/assignment-template.md`](../../templates/assignment-template.md).
+- The assignment must be created as a `README.md` file
+- Do not remove or skip required sections from the template.
 
-Cómo crear una nueva tarea
+## 2. Section Guidance
 
-1. Copia la plantilla desde `templates/assignment-template.md`.
-2. Crea una nueva carpeta dentro de `assignments/` con un nombre claro y en kebab-case (por ejemplo, `data-analysis`).
-3. Rellena el `README.md` usando la plantilla: objetivo, tareas, requisitos y criterios de evaluación.
-4. Añade el `starter-code` y cualquier dato necesario.
-5. Actualiza `config.json` si quieres que la tarea aparezca automáticamente en la página principal.
+The section headers should reflect the structure in the template, including the exact icon usage.
 
-Convenciones y buenas prácticas
+- **Title**: Replace `[Assignment Title]` with a short, descriptive name (e.g., `Python Basics`, `Loops and Conditionals`, `Functions and Modules`).
+- **Objective**: Write 1-2 sentences summarizing what the student will learn or accomplish. Focus on the main skills or concepts.
+- **Tasks**: For each task:
+	- Use a specific, action-oriented task name
+	- In the Description, clearly state what the student must do.
+	- In Requirements, use bullet points to list the expected outcomes or features. Be specific and measurable
+	- Provide example input/output in code blocks if helpful.
 
-- Nombres de carpetas descriptivos y en kebab-case.
-- Mantener instrucciones concisas y orientadas al aprendizaje.
-- Proporcionar ejemplos y casos de prueba cuando sea posible.
-- Evitar dependencias externas complejas; documentar cualquier requisito si los hay.
+Do not include extra sections unless explicitly specified.
 
-Estándares educativos
+## 3. Example Minimal README.md
 
-- Aprendizaje centrado: define objetivos claros y alcanzables.
-- Nivel apropiado: ajusta dificultad para el público objetivo.
-- Lenguaje amable y motivador para estudiantes.
+```md
+# 📘 Assignment: Loops and Conditionals
 
-Commit y revisión
+## 🎯 Objective
 
-- Realiza commits claros, p. ej. `add: assignment data-analysis`.
-- Añade una descripción breve en el `README.md` y prueba localmente antes de abrir PR.
+Implement programs that practice `for` and `while` loops and basic conditional logic.
 
-Si quieres, adapto una tarea concreta a partir de la plantilla.
+## 📝 Tasks
+
+### 🛠️ Count Vowels
+
+#### Description
+Write a function that counts vowels in a given string.
+
+#### Requirements
+- Function `count_vowels(s: str) -> int` that returns the number of vowels.
+- Include at least three test cases in the `README.md`.
+
+```
+
+## 4. Conventions
+
+- Use clear, student-friendly language.
+- Keep examples short and focused.
+- Provide starter code when helpful and small datasets when needed.
+
